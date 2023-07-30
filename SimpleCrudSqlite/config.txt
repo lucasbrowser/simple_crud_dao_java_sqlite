@@ -1,0 +1,11 @@
+BANCODADOS
+SQLITE
+ENDERECO
+C:/db/
+PORTA
+
+BANCO
+simple_crud.db
+USUARIO
+
+SENHA
