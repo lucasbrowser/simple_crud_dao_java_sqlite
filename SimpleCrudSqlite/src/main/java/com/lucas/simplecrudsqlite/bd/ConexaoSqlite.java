@@ -19,8 +19,8 @@ import javax.swing.JOptionPane;
 public class ConexaoSqlite {
     
     private boolean status = false;
-    private String mensagem = "";   //variavel que vai informar o status da conexao
-    private Connection con = null;  //variavel para conexao
+    private String mensagem = "";
+    private Connection con = null;  
     private Statement statement;
     private ResultSet resultSet;
     private  static  PropriedadesBD propriedadesBD;
@@ -38,7 +38,6 @@ public class ConexaoSqlite {
             Class.forName(propriedadesBD.getDriver());
 
             this.setCon((Connection) DriverManager.getConnection(propriedadesBD.getUrl()));
-            //se ocorrer tudo bem, ou seja, se conectar a linha a segui é executada
             this.status = true;
             
         } catch (ClassNotFoundException ex) {
